@@ -3,7 +3,7 @@
 
 console.group("Cuadrados");
 
-function perimetroCuadrado(lado) {
+function perimetroCuadrado (lado) {
 return lado*4;
 }
 
@@ -54,5 +54,23 @@ function areaCirculo (radio) {
 };
 
 
-
 console.groupEnd();
+
+//FUNCIONES PARA EL HTML//
+
+function CalcularPerimetroCuadrado() {
+
+const input = document.getElementById ("InputCuadrado");
+const value = input.value;
+const perimetro = perimetroCuadrado(value);
+alert(perimetro);
+}
+
+function CalcularAreaCuadrado() {
+    const input = document.getElementById ("InputCuadrado");
+    const value = input.value;
+    const area = areaCuadrado(value);
+    alert(area);
+ 
+}
+
